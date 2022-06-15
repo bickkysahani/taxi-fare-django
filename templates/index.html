@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block main %}
+<div class="row" style="padding-right: 0">
+  {#Input block#}
+  <div class="col-md-6">
+    <div class="row">
+        <form action="" class="form" method="POST" novalidate>
+          {% csrf_token %} {% for field in form %}
+          <div class="form-group row">
+            <label class="col-sm-3 col-md-6 col-form-label"
+              >{{ field.label }}</label
+            >
+            <div class="col-sm-5 col-md-6 ">{{ field }}</div>
+            {{ field.errors }}
+          </div>
+          {% endfor %}
+          <button class="btn btn-secondary" type="submit">Calculate</button>
+          <br /><br />
+        </form>
+      {#Results block#} {% if fare > 0 %}
+    
+        <div class="jumbotron jb_second">
+          <h3><strong>Fare: Rs.{{ fare|floatformat:2 }}</strong></h3>
+        </div>
+ 
+      {% endif %}
+    </div>
+  </div>
+
+
+  {#Fair Details block#}
+  <div class="col-md-6">
+    <h2>Fair Details</h2>
+    {% load static %} <img src={% static 'img/fair_details.PNG' %}
+    class="img-fluid">
+  </div>
+</div>
+
+{% endblock %}

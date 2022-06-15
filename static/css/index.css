@@ -1,0 +1,49 @@
+.jumbotron {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 0.5em;
+    color: #F9FBFA;
+    background-color: #00693e;
+}
+
+.jumbotron > p {
+    color: #9cc5b4;
+}
+
+.jb_second {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    color: #F9FBFA;
+    background-color: #009036;
+}
+
+.jb_second > p {
+    color: #FFFFFF;
+}
+
+.main {
+    color: #000000;
+    background-color: #F9FBFA;
+}
+
+a:link {
+    color: #F9FBFA;
+}
+
+a:visited {
+    color: #F9FBFA;
+}
+
+a:visited {
+    color: #F9FBFA;
+}
+
+a:hover {
+    color: #F9FBFA;
+}
+
+.btn-success {
+    background-color: #009036;
+    color: #F9FBFA;
+}

@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+
+{% block result %}
+
+<div class="col-sm-4 col-md-4 col-lg-3" style="padding-right: 0">
+  <div class="jumbotron jb_second">
+    <h3><strong>Fare: Rs.{{ fare|floatformat:2 }}</strong></h3>
+  </div>
+</div>
+
+{% endblock %}
