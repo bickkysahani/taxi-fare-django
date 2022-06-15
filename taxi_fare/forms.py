@@ -4,7 +4,7 @@ from datetime import datetime
 from .models import Journey
 
 class JourneyForm(forms.ModelForm):
-    time = forms.TimeField(label='Hour',required=True,
+    time = forms.TimeField(label='Time (0-23)',required=True,
                               widget=forms.TimeInput(format='%H:%M',attrs={'class':'form-control'}),
                               initial=datetime.now().strftime('%H:%M'))
     distance = forms.FloatField(label='Distance (km)',

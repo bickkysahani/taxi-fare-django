@@ -12,9 +12,12 @@
             <div class="col-sm-5 col-md-6 ">{{ field }}</div>
             {{ field.errors }}
           </div>
+       
           {% endfor %}
-          <button class="btn btn-secondary" type="submit">Calculate</button>
+          <button class="btn btn-success" type="submit">Calculate</button>
+            <a href="{% url 'index' %}"class="btn btn-secondary">Clear</a>
           <br /><br />
+             {{ error }}
         </form>
       {#Results block#} {% if fare > 0 %}
     

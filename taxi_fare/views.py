@@ -19,7 +19,9 @@ def index(request):
                 form = JourneyForm()
                 return render(request,'index.html',{'form':form,'fare':fare})
             else:
-                print('Distance must be greater than 0')
+                form = JourneyForm()
+                return render(request,'index.html',{'form':form,'error':'Distance must be greater than 0'})
+                #print('Distance must be greater than 0')
            
     form = JourneyForm()
     return render(request,'index.html',{'form':form})
