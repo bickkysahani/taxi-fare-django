@@ -31,10 +31,10 @@ python manage.py runserver
 
 # Screenshots of the project
 
-<img src="screenshots/taxi-fare-1.png">
+<img src="screenshots\taxi-fare-1.PNG">
 <br>
 <br>
-<img src="screenshots/taxi-fare-2.png">
+<img src="screenshots\taxi-fare-2.png">
 <br>
 <br>
-<img src="screenshots/taxi-fare-3.png">
+<img src="screenshots\taxi-fare-3.png">
