@@ -34,7 +34,7 @@ python manage.py runserver
 <img src="screenshots\taxi-fare-1.PNG">
 <br>
 <br>
-<img src="screenshots\taxi-fare-2.png">
+<img src="screenshots\taxi-fare-2.PNG">
 <br>
 <br>
-<img src="screenshots\taxi-fare-3.png">
+<img src="screenshots\taxi-fare-3.PNG">
