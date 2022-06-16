@@ -16,7 +16,7 @@ def index(request):
                 print(fare)
                 journey = Journey(distance=distance,time=time,fare=fare)
                 journey.save()
-                form = JourneyForm()
+                # form = JourneyForm()
                 return render(request,'index.html',{'form':form,'fare':fare})
             else:
                 form = JourneyForm()
